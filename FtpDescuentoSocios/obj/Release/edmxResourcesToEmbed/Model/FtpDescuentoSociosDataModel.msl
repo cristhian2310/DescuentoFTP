@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="eFarmaxModelStoreContainer" CdmEntityContainer="eFarmaxEntities">
+    <EntitySetMapping Name="DescuentoSocios">
+      <EntityTypeMapping TypeName="eFarmaxModel.DescuentoSocio">
+        <MappingFragment StoreEntitySet="DescuentoSocios">
+          <ScalarProperty Name="IdDescuentoSocio" ColumnName="IdDescuentoSocio" />
+          <ScalarProperty Name="IdSocio" ColumnName="IdSocio" />
+          <ScalarProperty Name="IdCliente" ColumnName="IdCliente" />
+          <ScalarProperty Name="FechaTransaccion" ColumnName="FechaTransaccion" />
+          <ScalarProperty Name="Monto" ColumnName="Monto" />
+          <ScalarProperty Name="IdUsrCreacion" ColumnName="IdUsrCreacion" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="IdUsrUltimaModificacion" ColumnName="IdUsrUltimaModificacion" />
+          <ScalarProperty Name="FechaUltimaModificacion" ColumnName="FechaUltimaModificacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Socios">
+      <EntityTypeMapping TypeName="eFarmaxModel.Socio">
+        <MappingFragment StoreEntitySet="Socios">
+          <ScalarProperty Name="PasswordFtp" ColumnName="PasswordFtp" />
+          <ScalarProperty Name="UsuarioFtp" ColumnName="UsuarioFtp" />
+          <ScalarProperty Name="IdSocio" ColumnName="IdSocio" />
+          <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="Contrasenia" ColumnName="Contrasenia" />
+          <ScalarProperty Name="IdUsrCreacion" ColumnName="IdUsrCreacion" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="IdUsrUltimaModificacion" ColumnName="IdUsrUltimaModificacion" />
+          <ScalarProperty Name="FechaUltimaModificacion" ColumnName="FechaUltimaModificacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clientes">
+      <EntityTypeMapping TypeName="eFarmaxModel.Cliente">
+        <MappingFragment StoreEntitySet="SRV_Clientes">
+          <ScalarProperty Name="NoAfiliadoPBS" ColumnName="NoAfiliadoPBS" />
+          <ScalarProperty Name="lugartrabajosucu" ColumnName="lugartrabajosucu" />
+          <ScalarProperty Name="lugartrabajo" ColumnName="lugartrabajo" />
+          <ScalarProperty Name="puntosDisponibles" ColumnName="puntosDisponibles" />
+          <ScalarProperty Name="Pasaporte" ColumnName="Pasaporte" />
+          <ScalarProperty Name="CedulaMenor" ColumnName="CedulaMenor" />
+          <ScalarProperty Name="NroAsegurado" ColumnName="NroAsegurado" />
+          <ScalarProperty Name="IdAcreedorSalud" ColumnName="IdAcreedorSalud" />
+          <ScalarProperty Name="AuxiliarContable" ColumnName="AuxiliarContable" />
+          <ScalarProperty Name="PerfilServicio" ColumnName="PerfilServicio" />
+          <ScalarProperty Name="FechaUltimaModificacion" ColumnName="FechaUltimaModificacion" />
+          <ScalarProperty Name="NroTarjeta" ColumnName="NroTarjeta" />
+          <ScalarProperty Name="IdTarjeta" ColumnName="IdTarjeta" />
+          <ScalarProperty Name="TelOficina" ColumnName="TelOficina" />
+          <ScalarProperty Name="TelCasa" ColumnName="TelCasa" />
+          <ScalarProperty Name="msrepl_tran_version" ColumnName="msrepl_tran_version" />
+          <ScalarProperty Name="Id_TipoIdentificacion" ColumnName="Id_TipoIdentificacion" />
+          <ScalarProperty Name="IdUsrUltimaModificacion" ColumnName="IdUsrUltimaModificacion" />
+          <ScalarProperty Name="IdUsrCreacion" ColumnName="IdUsrCreacion" />
+          <ScalarProperty Name="Estado_Credito" ColumnName="Estado_Credito" />
+          <ScalarProperty Name="Legajo" ColumnName="Legajo" />
+          <ScalarProperty Name="MontoDisponible" ColumnName="MontoDisponible" />
+          <ScalarProperty Name="LimiteCredito" ColumnName="LimiteCredito" />
+          <ScalarProperty Name="RNC" ColumnName="RNC" />
+          <ScalarProperty Name="Gubernamental" ColumnName="Gubernamental" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="PersonalidadJuridica" ColumnName="PersonalidadJuridica" />
+          <ScalarProperty Name="IDpoliticacredito" ColumnName="IDpoliticacredito" />
+          <ScalarProperty Name="IDEstructuradescuento" ColumnName="IDEstructuradescuento" />
+          <ScalarProperty Name="IDempresaafiliada" ColumnName="IDempresaafiliada" />
+          <ScalarProperty Name="AceptarCheque" ColumnName="AceptarCheque" />
+          <ScalarProperty Name="IDusuario" ColumnName="IDusuario" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="IDsucursalAsiste" ColumnName="IDsucursalAsiste" />
+          <ScalarProperty Name="Ordencompra" ColumnName="Ordencompra" />
+          <ScalarProperty Name="Zonafranca" ColumnName="Zonafranca" />
+          <ScalarProperty Name="IDLugarTrabajo" ColumnName="IDLugarTrabajo" />
+          <ScalarProperty Name="EsCuentaCorporativa" ColumnName="EsCuentaCorporativa" />
+          <ScalarProperty Name="Parentesco" ColumnName="Parentesco" />
+          <ScalarProperty Name="ManejoLimite" ColumnName="ManejoLimite" />
+          <ScalarProperty Name="NoDependientes" ColumnName="NoDependientes" />
+          <ScalarProperty Name="Cedula" ColumnName="Cedula" />
+          <ScalarProperty Name="CodigoDeBusqueda" ColumnName="CodigoDeBusqueda" />
+          <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+          <ScalarProperty Name="FechaUltimoCambio" ColumnName="FechaUltimoCambio" />
+          <ScalarProperty Name="FechaNac" ColumnName="FechaNac" />
+          <ScalarProperty Name="Sexo" ColumnName="Sexo" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Apellido2" ColumnName="Apellido2" />
+          <ScalarProperty Name="Apellido1" ColumnName="Apellido1" />
+          <ScalarProperty Name="Nombre2" ColumnName="Nombre2" />
+          <ScalarProperty Name="Nombre1" ColumnName="Nombre1" />
+          <ScalarProperty Name="IDPlanfidelidad" ColumnName="IDPlanfidelidad" />
+          <ScalarProperty Name="IDsucursal" ColumnName="IDsucursal" />
+          <ScalarProperty Name="IDlimite" ColumnName="IDlimite" />
+          <ScalarProperty Name="IDtipoClientes" ColumnName="IDtipoClientes" />
+          <ScalarProperty Name="IDClientePadre" ColumnName="IDClientePadre" />
+          <ScalarProperty Name="IDCliente" ColumnName="IDCliente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

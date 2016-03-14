@@ -1,0 +1,41 @@
+C:\Users\giro3006\Documents\Visual Studio 2012\Projects\FtpDescuentoSocios\FtpDescuentoSocios\bin\Debug\FtpDescuentoSocios.exe.config
+C:\Users\giro3006\Documents\Visual Studio 2012\Projects\FtpDescuentoSocios\FtpDescuentoSocios\bin\Debug\FtpDescuentoSocios.exe
+C:\Users\giro3006\Documents\Visual Studio 2012\Projects\FtpDescuentoSocios\FtpDescuentoSocios\bin\Debug\FtpDescuentoSocios.pdb
+C:\Users\giro3006\Documents\Visual Studio 2012\Projects\FtpDescuentoSocios\FtpDescuentoSocios\bin\Debug\EntityFramework.dll
+C:\Users\giro3006\Documents\Visual Studio 2012\Projects\FtpDescuentoSocios\FtpDescuentoSocios\bin\Debug\EntityFramework.xml
+C:\Users\giro3006\Documents\Visual Studio 2012\Projects\FtpDescuentoSocios\FtpDescuentoSocios\obj\Debug\FtpDescuentoSocios.csprojResolveAssemblyReference.cache
+C:\Users\giro3006\Documents\Visual Studio 2012\Projects\FtpDescuentoSocios\FtpDescuentoSocios\obj\Debug\FtpDescuentoSocios.exe
+C:\Users\giro3006\Documents\Visual Studio 2012\Projects\FtpDescuentoSocios\FtpDescuentoSocios\obj\Debug\FtpDescuentoSocios.pdb
+C:\Users\crcu2914\Desktop\Giwbert\FtpDescuentoSocios\FtpDescuentoSocios\bin\Debug\FtpDescuentoSocios.exe.config
+C:\Users\crcu2914\Desktop\Giwbert\FtpDescuentoSocios\FtpDescuentoSocios\bin\Debug\FtpDescuentoSocios.exe
+C:\Users\crcu2914\Desktop\Giwbert\FtpDescuentoSocios\FtpDescuentoSocios\bin\Debug\FtpDescuentoSocios.pdb
+C:\Users\crcu2914\Desktop\Giwbert\FtpDescuentoSocios\FtpDescuentoSocios\bin\Debug\EntityFramework.dll
+C:\Users\crcu2914\Desktop\Giwbert\FtpDescuentoSocios\FtpDescuentoSocios\bin\Debug\EntityFramework.xml
+C:\Users\crcu2914\Desktop\Giwbert\FtpDescuentoSocios\FtpDescuentoSocios\obj\Debug\FtpDescuentoSocios.csprojResolveAssemblyReference.cache
+C:\Users\crcu2914\Desktop\Giwbert\FtpDescuentoSocios\FtpDescuentoSocios\obj\Debug\FtpDescuentoSocios.ProjectInstaller.resources
+C:\Users\crcu2914\Desktop\Giwbert\FtpDescuentoSocios\FtpDescuentoSocios\obj\Debug\FtpDescuentoSocios.csproj.GenerateResource.Cache
+C:\Users\crcu2914\Desktop\Giwbert\FtpDescuentoSocios\FtpDescuentoSocios\obj\Debug\FtpDescuentoSocios.exe
+C:\Users\crcu2914\Desktop\Giwbert\FtpDescuentoSocios\FtpDescuentoSocios\obj\Debug\FtpDescuentoSocios.pdb
+C:\Users\gede2926\Documents\Visual Studio 2012\Projects\FtpDescuentoSocios\FtpDescuentoSocios\bin\Debug\FtpDescuentoSocios.exe.config
+C:\Users\gede2926\Documents\Visual Studio 2012\Projects\FtpDescuentoSocios\FtpDescuentoSocios\obj\Debug\FtpDescuentoSocios.exe
+C:\Users\gede2926\Documents\Visual Studio 2012\Projects\FtpDescuentoSocios\FtpDescuentoSocios\obj\Debug\FtpDescuentoSocios.pdb
+C:\Users\crcu2914\Desktop\FtpDescuentoSocios\FtpDescuentoSocios\bin\Debug\FtpDescuentoSocios.exe.config
+C:\Users\crcu2914\Desktop\FtpDescuentoSocios\FtpDescuentoSocios\obj\Debug\FtpDescuentoSocios.exe
+C:\Users\crcu2914\Desktop\FtpDescuentoSocios\FtpDescuentoSocios\obj\Debug\FtpDescuentoSocios.pdb
+C:\Users\crcu2914\Desktop\FtpDescuentoSocios\FtpDescuentoSocios\bin\Debug\FtpDescuentoSocios.exe
+C:\Users\crcu2914\Desktop\FtpDescuentoSocios\FtpDescuentoSocios\bin\Debug\FtpDescuentoSocios.pdb
+C:\Users\crcu2914\Desktop\FtpDescuentoSocios\FtpDescuentoSocios\bin\Debug\EntityFramework.dll
+C:\Users\crcu2914\Desktop\FtpDescuentoSocios\FtpDescuentoSocios\bin\Debug\EntityFramework.xml
+C:\Users\crcu2914\Desktop\FtpDescuentoSocios\FtpDescuentoSocios\obj\Debug\FtpDescuentoSocios.csprojResolveAssemblyReference.cache
+C:\Users\crcu2914\Desktop\FtpDescuentoSocios\FtpDescuentoSocios\obj\Debug\FtpDescuentoSocios.ProjectInstaller.resources
+C:\Users\crcu2914\Desktop\FtpDescuentoSocios\FtpDescuentoSocios\obj\Debug\FtpDescuentoSocios.csproj.GenerateResource.Cache
+C:\Users\crcu2914\Documents\Visual Studio 2012\Projects\FtpDescuentoSocios\FtpDescuentoSocios\bin\Debug\FtpDescuentoSocios.exe.config
+C:\Users\crcu2914\Documents\Visual Studio 2012\Projects\FtpDescuentoSocios\FtpDescuentoSocios\obj\Debug\FtpDescuentoSocios.exe
+C:\Users\crcu2914\Documents\Visual Studio 2012\Projects\FtpDescuentoSocios\FtpDescuentoSocios\obj\Debug\FtpDescuentoSocios.pdb
+C:\Users\crcu2914\Documents\Visual Studio 2012\Projects\FtpDescuentoSocios\FtpDescuentoSocios\bin\Debug\FtpDescuentoSocios.exe
+C:\Users\crcu2914\Documents\Visual Studio 2012\Projects\FtpDescuentoSocios\FtpDescuentoSocios\bin\Debug\FtpDescuentoSocios.pdb
+C:\Users\crcu2914\Documents\Visual Studio 2012\Projects\FtpDescuentoSocios\FtpDescuentoSocios\bin\Debug\EntityFramework.dll
+C:\Users\crcu2914\Documents\Visual Studio 2012\Projects\FtpDescuentoSocios\FtpDescuentoSocios\bin\Debug\EntityFramework.xml
+C:\Users\crcu2914\Documents\Visual Studio 2012\Projects\FtpDescuentoSocios\FtpDescuentoSocios\obj\Debug\FtpDescuentoSocios.csprojResolveAssemblyReference.cache
+C:\Users\crcu2914\Documents\Visual Studio 2012\Projects\FtpDescuentoSocios\FtpDescuentoSocios\obj\Debug\FtpDescuentoSocios.ProjectInstaller.resources
+C:\Users\crcu2914\Documents\Visual Studio 2012\Projects\FtpDescuentoSocios\FtpDescuentoSocios\obj\Debug\FtpDescuentoSocios.csproj.GenerateResource.Cache

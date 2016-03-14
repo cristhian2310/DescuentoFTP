@@ -1,0 +1,20 @@
+C:\Users\crcu2914\Desktop\Giwbert\FtpDescuentoSocios\FtpDescuentoSocios\bin\Release\FtpDescuentoSocios.exe.config
+C:\Users\crcu2914\Desktop\Giwbert\FtpDescuentoSocios\FtpDescuentoSocios\bin\Release\FtpDescuentoSocios.exe
+C:\Users\crcu2914\Desktop\Giwbert\FtpDescuentoSocios\FtpDescuentoSocios\bin\Release\FtpDescuentoSocios.pdb
+C:\Users\crcu2914\Desktop\Giwbert\FtpDescuentoSocios\FtpDescuentoSocios\bin\Release\EntityFramework.dll
+C:\Users\crcu2914\Desktop\Giwbert\FtpDescuentoSocios\FtpDescuentoSocios\bin\Release\EntityFramework.xml
+C:\Users\crcu2914\Desktop\Giwbert\FtpDescuentoSocios\FtpDescuentoSocios\obj\Release\FtpDescuentoSocios.csprojResolveAssemblyReference.cache
+C:\Users\crcu2914\Desktop\Giwbert\FtpDescuentoSocios\FtpDescuentoSocios\obj\Release\FtpDescuentoSocios.ProjectInstaller.resources
+C:\Users\crcu2914\Desktop\Giwbert\FtpDescuentoSocios\FtpDescuentoSocios\obj\Release\FtpDescuentoSocios.csproj.GenerateResource.Cache
+C:\Users\crcu2914\Desktop\Giwbert\FtpDescuentoSocios\FtpDescuentoSocios\obj\Release\FtpDescuentoSocios.exe
+C:\Users\crcu2914\Desktop\Giwbert\FtpDescuentoSocios\FtpDescuentoSocios\obj\Release\FtpDescuentoSocios.pdb
+C:\Users\crcu2914\Documents\Visual Studio 2012\Projects\FtpDescuentoSocios\FtpDescuentoSocios\bin\Release\FtpDescuentoSocios.exe.config
+C:\Users\crcu2914\Documents\Visual Studio 2012\Projects\FtpDescuentoSocios\FtpDescuentoSocios\obj\Release\FtpDescuentoSocios.exe
+C:\Users\crcu2914\Documents\Visual Studio 2012\Projects\FtpDescuentoSocios\FtpDescuentoSocios\obj\Release\FtpDescuentoSocios.pdb
+C:\Users\crcu2914\Documents\Visual Studio 2012\Projects\FtpDescuentoSocios\FtpDescuentoSocios\bin\Release\FtpDescuentoSocios.exe
+C:\Users\crcu2914\Documents\Visual Studio 2012\Projects\FtpDescuentoSocios\FtpDescuentoSocios\bin\Release\FtpDescuentoSocios.pdb
+C:\Users\crcu2914\Documents\Visual Studio 2012\Projects\FtpDescuentoSocios\FtpDescuentoSocios\bin\Release\EntityFramework.dll
+C:\Users\crcu2914\Documents\Visual Studio 2012\Projects\FtpDescuentoSocios\FtpDescuentoSocios\bin\Release\EntityFramework.xml
+C:\Users\crcu2914\Documents\Visual Studio 2012\Projects\FtpDescuentoSocios\FtpDescuentoSocios\obj\Release\FtpDescuentoSocios.csprojResolveAssemblyReference.cache
+C:\Users\crcu2914\Documents\Visual Studio 2012\Projects\FtpDescuentoSocios\FtpDescuentoSocios\obj\Release\FtpDescuentoSocios.ProjectInstaller.resources
+C:\Users\crcu2914\Documents\Visual Studio 2012\Projects\FtpDescuentoSocios\FtpDescuentoSocios\obj\Release\FtpDescuentoSocios.csproj.GenerateResource.Cache

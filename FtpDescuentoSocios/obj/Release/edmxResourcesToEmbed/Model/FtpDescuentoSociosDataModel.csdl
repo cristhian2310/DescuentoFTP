@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="eFarmaxModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="eFarmaxEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="DescuentoSocios" EntityType="eFarmaxModel.DescuentoSocio" />
+    <EntitySet Name="Socios" EntityType="eFarmaxModel.Socio" />
+    <AssociationSet Name="FK_DescuentoSocios_Socios" Association="eFarmaxModel.FK_DescuentoSocios_Socios">
+      <End Role="Socios" EntitySet="Socios" />
+      <End Role="DescuentoSocios" EntitySet="DescuentoSocios" />
+    </AssociationSet>
+    <EntitySet Name="Clientes" EntityType="eFarmaxModel.Cliente" />
+    <AssociationSet Name="FK_DescuentoSocios_SRV_Clientes" Association="eFarmaxModel.FK_DescuentoSocios_SRV_Clientes">
+      <End Role="SRV_Clientes" EntitySet="Clientes" />
+      <End Role="DescuentoSocio" EntitySet="DescuentoSocios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SRV_Clientes_SRV_Clientes" Association="eFarmaxModel.FK_SRV_Clientes_SRV_Clientes">
+      <End Role="SRV_Clientes" EntitySet="Clientes" />
+      <End Role="SRV_Clientes1" EntitySet="Clientes" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="DescuentoSocio">
+    <Key>
+      <PropertyRef Name="IdDescuentoSocio" />
+    </Key>
+    <Property Name="IdDescuentoSocio" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="IdSocio" Type="Int32" />
+    <Property Name="IdCliente" Type="Int32" />
+    <Property Name="FechaTransaccion" Type="DateTime" Precision="3" />
+    <Property Name="Monto" Type="Decimal" Precision="19" Scale="2" />
+    <Property Name="IdUsrCreacion" Type="Int32" />
+    <Property Name="FechaCreacion" Type="DateTime" Precision="3" />
+    <Property Name="IdUsrUltimaModificacion" Type="Int32" />
+    <Property Name="FechaUltimaModificacion" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Socio" Relationship="eFarmaxModel.FK_DescuentoSocios_Socios" FromRole="DescuentoSocios" ToRole="Socios" />
+    <NavigationProperty Name="SRV_Clientes" Relationship="eFarmaxModel.FK_DescuentoSocios_SRV_Clientes" FromRole="DescuentoSocio" ToRole="SRV_Clientes" />
+  </EntityType>
+  <EntityType Name="Socio">
+    <Key>
+      <PropertyRef Name="IdSocio" />
+    </Key>
+    <Property Name="IdSocio" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="IdEstado" Type="Int16" />
+    <Property Name="Descripcion" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="Usuario" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Contrasenia" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="IdUsrCreacion" Type="Int32" />
+    <Property Name="FechaCreacion" Type="DateTime" Precision="3" />
+    <Property Name="IdUsrUltimaModificacion" Type="Int32" />
+    <Property Name="FechaUltimaModificacion" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="DescuentoSocios" Relationship="eFarmaxModel.FK_DescuentoSocios_Socios" FromRole="Socios" ToRole="DescuentoSocios" />
+    <Property Type="String" Name="UsuarioFtp" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="PasswordFtp" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <Association Name="FK_DescuentoSocios_Socios">
+    <End Role="Socios" Type="eFarmaxModel.Socio" Multiplicity="0..1" />
+    <End Role="DescuentoSocios" Type="eFarmaxModel.DescuentoSocio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Socios">
+        <PropertyRef Name="IdSocio" />
+      </Principal>
+      <Dependent Role="DescuentoSocios">
+        <PropertyRef Name="IdSocio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="IDCliente" />
+    </Key>
+    <Property Type="Int32" Name="IDCliente" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="IDClientePadre" />
+    <Property Type="Int32" Name="IDtipoClientes" Nullable="false" />
+    <Property Type="Int32" Name="IDlimite" Nullable="false" />
+    <Property Type="Int32" Name="IDsucursal" />
+    <Property Type="Int32" Name="IDPlanfidelidad" />
+    <Property Type="String" Name="Nombre1" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Nombre2" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Apellido1" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Apellido2" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Email" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Byte" Name="Sexo" Nullable="false" />
+    <Property Type="DateTime" Name="FechaNac" Nullable="false" Precision="3" />
+    <Property Type="DateTime" Name="FechaUltimoCambio" Nullable="false" Precision="3" />
+    <Property Type="Byte" Name="Estatus" Nullable="false" />
+    <Property Type="String" Name="CodigoDeBusqueda" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="Cedula" MaxLength="13" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="NoDependientes" />
+    <Property Type="Byte" Name="ManejoLimite" />
+    <Property Type="String" Name="Parentesco" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="EsCuentaCorporativa" />
+    <Property Type="Int32" Name="IDLugarTrabajo" />
+    <Property Type="Boolean" Name="Zonafranca" />
+    <Property Type="Boolean" Name="Ordencompra" />
+    <Property Type="Int32" Name="IDsucursalAsiste" />
+    <Property Type="DateTime" Name="FechaCreacion" Precision="3" />
+    <Property Type="Int32" Name="IDusuario" />
+    <Property Type="Boolean" Name="AceptarCheque" />
+    <Property Type="Int32" Name="IDempresaafiliada" />
+    <Property Type="Int32" Name="IDEstructuradescuento" />
+    <Property Type="Int32" Name="IDpoliticacredito" />
+    <Property Type="Int32" Name="PersonalidadJuridica" />
+    <Property Type="Guid" Name="rowguid" Nullable="false" />
+    <Property Type="Boolean" Name="Gubernamental" />
+    <Property Type="String" Name="RNC" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="LimiteCredito" Precision="19" Scale="2" />
+    <Property Type="Decimal" Name="MontoDisponible" Precision="19" Scale="2" />
+    <Property Type="String" Name="Legajo" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Estado_Credito" />
+    <Property Type="Int32" Name="IdUsrCreacion" />
+    <Property Type="Int32" Name="IdUsrUltimaModificacion" />
+    <Property Type="Int32" Name="Id_TipoIdentificacion" />
+    <Property Type="Guid" Name="msrepl_tran_version" Nullable="false" />
+    <Property Type="String" Name="TelCasa" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TelOficina" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="IdTarjeta" />
+    <Property Type="String" Name="NroTarjeta" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="FechaUltimaModificacion" Precision="3" />
+    <Property Type="Int32" Name="PerfilServicio" />
+    <Property Type="String" Name="AuxiliarContable" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="IdAcreedorSalud" />
+    <Property Type="String" Name="NroAsegurado" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CedulaMenor" MaxLength="13" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="Pasaporte" MaxLength="20" FixedLength="true" Unicode="false" />
+    <Property Type="Decimal" Name="puntosDisponibles" Precision="19" Scale="4" />
+    <Property Type="Int32" Name="lugartrabajo" />
+    <Property Type="Int32" Name="lugartrabajosucu" />
+    <Property Type="String" Name="NoAfiliadoPBS" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="DescuentoSocios" Relationship="eFarmaxModel.FK_DescuentoSocios_SRV_Clientes" FromRole="SRV_Clientes" ToRole="DescuentoSocio" />
+    <NavigationProperty Name="SRV_Clientes1" Relationship="eFarmaxModel.FK_SRV_Clientes_SRV_Clientes" FromRole="SRV_Clientes" ToRole="SRV_Clientes1" />
+    <NavigationProperty Name="SRV_Clientes2" Relationship="eFarmaxModel.FK_SRV_Clientes_SRV_Clientes" FromRole="SRV_Clientes1" ToRole="SRV_Clientes" />
+  </EntityType>
+  <Association Name="FK_DescuentoSocios_SRV_Clientes">
+    <End Type="eFarmaxModel.Cliente" Role="SRV_Clientes" Multiplicity="0..1" />
+    <End Type="eFarmaxModel.DescuentoSocio" Role="DescuentoSocio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SRV_Clientes">
+        <PropertyRef Name="IDCliente" />
+      </Principal>
+      <Dependent Role="DescuentoSocio">
+        <PropertyRef Name="IdCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SRV_Clientes_SRV_Clientes">
+    <End Type="eFarmaxModel.Cliente" Role="SRV_Clientes" Multiplicity="0..1" />
+    <End Type="eFarmaxModel.Cliente" Role="SRV_Clientes1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SRV_Clientes">
+        <PropertyRef Name="IDCliente" />
+      </Principal>
+      <Dependent Role="SRV_Clientes1">
+        <PropertyRef Name="IDClientePadre" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

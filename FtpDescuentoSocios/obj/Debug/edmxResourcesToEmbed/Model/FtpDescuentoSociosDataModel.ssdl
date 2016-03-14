@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="eFarmaxModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="eFarmaxModelStoreContainer">
+    <EntitySet Name="DescuentoSocios" EntityType="eFarmaxModel.Store.DescuentoSocios" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Socios" EntityType="eFarmaxModel.Store.Socios" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SRV_Clientes" EntityType="eFarmaxModel.Store.SRV_Clientes" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_DescuentoSocios_Socios" Association="eFarmaxModel.Store.FK_DescuentoSocios_Socios">
+      <End Role="Socios" EntitySet="Socios" />
+      <End Role="DescuentoSocios" EntitySet="DescuentoSocios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DescuentoSocios_SRV_Clientes" Association="eFarmaxModel.Store.FK_DescuentoSocios_SRV_Clientes">
+      <End Role="SRV_Clientes" EntitySet="SRV_Clientes" />
+      <End Role="DescuentoSocios" EntitySet="DescuentoSocios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SRV_Clientes_SRV_Clientes" Association="eFarmaxModel.Store.FK_SRV_Clientes_SRV_Clientes">
+      <End Role="SRV_Clientes" EntitySet="SRV_Clientes" />
+      <End Role="SRV_Clientes1" EntitySet="SRV_Clientes" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="DescuentoSocios">
+    <Key>
+      <PropertyRef Name="IdDescuentoSocio" />
+    </Key>
+    <Property Name="IdDescuentoSocio" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdSocio" Type="int" />
+    <Property Name="IdCliente" Type="int" />
+    <Property Name="FechaTransaccion" Type="datetime" />
+    <Property Name="Monto" Type="decimal" Precision="19" Scale="2" />
+    <Property Name="IdUsrCreacion" Type="int" />
+    <Property Name="FechaCreacion" Type="datetime" />
+    <Property Name="IdUsrUltimaModificacion" Type="int" />
+    <Property Name="FechaUltimaModificacion" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Socios">
+    <Key>
+      <PropertyRef Name="IdSocio" />
+    </Key>
+    <Property Name="IdSocio" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdEstado" Type="smallint" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="255" />
+    <Property Name="Usuario" Type="varchar" MaxLength="50" />
+    <Property Name="Contrasenia" Type="varchar" MaxLength="50" />
+    <Property Name="IdUsrCreacion" Type="int" />
+    <Property Name="FechaCreacion" Type="datetime" />
+    <Property Name="IdUsrUltimaModificacion" Type="int" />
+    <Property Name="FechaUltimaModificacion" Type="datetime" />
+    <Property Name="UsuarioFtp" Type="varchar" MaxLength="50" />
+    <Property Name="PasswordFtp" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="SRV_Clientes">
+    <Key>
+      <PropertyRef Name="IDCliente" />
+    </Key>
+    <Property Name="IDCliente" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IDClientePadre" Type="int" />
+    <Property Name="IDtipoClientes" Type="int" Nullable="false" />
+    <Property Name="IDlimite" Type="int" Nullable="false" />
+    <Property Name="IDsucursal" Type="int" />
+    <Property Name="IDPlanfidelidad" Type="int" />
+    <Property Name="Nombre1" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Nombre2" Type="varchar" MaxLength="50" />
+    <Property Name="Apellido1" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Apellido2" Type="varchar" MaxLength="50" />
+    <Property Name="Email" Type="varchar" MaxLength="50" />
+    <Property Name="Sexo" Type="tinyint" Nullable="false" />
+    <Property Name="FechaNac" Type="datetime" Nullable="false" />
+    <Property Name="FechaUltimoCambio" Type="datetime" Nullable="false" />
+    <Property Name="Estatus" Type="tinyint" Nullable="false" />
+    <Property Name="CodigoDeBusqueda" Type="char" MaxLength="10" />
+    <Property Name="Cedula" Type="char" MaxLength="13" />
+    <Property Name="NoDependientes" Type="int" />
+    <Property Name="ManejoLimite" Type="tinyint" />
+    <Property Name="Parentesco" Type="varchar" MaxLength="50" />
+    <Property Name="EsCuentaCorporativa" Type="bit" />
+    <Property Name="IDLugarTrabajo" Type="int" />
+    <Property Name="Zonafranca" Type="bit" />
+    <Property Name="Ordencompra" Type="bit" />
+    <Property Name="IDsucursalAsiste" Type="int" />
+    <Property Name="FechaCreacion" Type="datetime" />
+    <Property Name="IDusuario" Type="int" />
+    <Property Name="AceptarCheque" Type="bit" />
+    <Property Name="IDempresaafiliada" Type="int" />
+    <Property Name="IDEstructuradescuento" Type="int" />
+    <Property Name="IDpoliticacredito" Type="int" />
+    <Property Name="PersonalidadJuridica" Type="int" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Gubernamental" Type="bit" />
+    <Property Name="RNC" Type="varchar" MaxLength="30" />
+    <Property Name="LimiteCredito" Type="decimal" Precision="19" Scale="2" />
+    <Property Name="MontoDisponible" Type="decimal" Precision="19" Scale="2" />
+    <Property Name="Legajo" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Estado_Credito" Type="int" />
+    <Property Name="IdUsrCreacion" Type="int" />
+    <Property Name="IdUsrUltimaModificacion" Type="int" />
+    <Property Name="Id_TipoIdentificacion" Type="int" />
+    <Property Name="msrepl_tran_version" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="TelCasa" Type="varchar" MaxLength="50" />
+    <Property Name="TelOficina" Type="varchar" MaxLength="50" />
+    <Property Name="IdTarjeta" Type="int" />
+    <Property Name="NroTarjeta" Type="varchar" MaxLength="50" />
+    <Property Name="FechaUltimaModificacion" Type="datetime" />
+    <Property Name="PerfilServicio" Type="int" />
+    <Property Name="AuxiliarContable" Type="varchar" MaxLength="50" />
+    <Property Name="IdAcreedorSalud" Type="int" />
+    <Property Name="NroAsegurado" Type="varchar" MaxLength="50" />
+    <Property Name="CedulaMenor" Type="char" MaxLength="13" />
+    <Property Name="Pasaporte" Type="char" MaxLength="20" />
+    <Property Name="puntosDisponibles" Type="money" />
+    <Property Name="lugartrabajo" Type="int" />
+    <Property Name="lugartrabajosucu" Type="int" />
+    <Property Name="NoAfiliadoPBS" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_DescuentoSocios_Socios">
+    <End Role="Socios" Type="eFarmaxModel.Store.Socios" Multiplicity="0..1" />
+    <End Role="DescuentoSocios" Type="eFarmaxModel.Store.DescuentoSocios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Socios">
+        <PropertyRef Name="IdSocio" />
+      </Principal>
+      <Dependent Role="DescuentoSocios">
+        <PropertyRef Name="IdSocio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DescuentoSocios_SRV_Clientes">
+    <End Role="SRV_Clientes" Type="eFarmaxModel.Store.SRV_Clientes" Multiplicity="0..1" />
+    <End Role="DescuentoSocios" Type="eFarmaxModel.Store.DescuentoSocios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SRV_Clientes">
+        <PropertyRef Name="IDCliente" />
+      </Principal>
+      <Dependent Role="DescuentoSocios">
+        <PropertyRef Name="IdCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SRV_Clientes_SRV_Clientes">
+    <End Role="SRV_Clientes" Type="eFarmaxModel.Store.SRV_Clientes" Multiplicity="0..1" />
+    <End Role="SRV_Clientes1" Type="eFarmaxModel.Store.SRV_Clientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SRV_Clientes">
+        <PropertyRef Name="IDCliente" />
+      </Principal>
+      <Dependent Role="SRV_Clientes1">
+        <PropertyRef Name="IDClientePadre" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
